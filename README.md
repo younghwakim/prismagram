@@ -3,7 +3,7 @@ Instagram clone with Express + Presma + React and React Native
 
 ## User stories
 
-- [v] Create account
+- [x] Create account
 - [ ] Request Secret
 - [ ] Confirm Secret (Login)
 - [ ] Like / Unlike a photo
