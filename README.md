@@ -15,7 +15,7 @@ Instagram clone with Express + Presma + React and React Native
 - [x] Edit my profile
 - [x] See user profile
 - [x] See MY profile
-- [ ] See the full photo
+- [x] See the full photo
 - [ ] Upload a photos
 - [ ] Edit to photo (Delete)
 - [ ] See the feed
