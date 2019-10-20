@@ -1,0 +1,6 @@
+type Mutation {
+    upload(
+        caption: String!
+        files: [String!]!
+    ): Post!
+}
