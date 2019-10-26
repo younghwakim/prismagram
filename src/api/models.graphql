@@ -16,55 +16,55 @@ type User {
   comments: [Comment!]!
   rooms: [Room!]!
   loginSecret: String
-  createdAt: String!
-  updatedAt: String!
+  createdAt: String
+  updatedAt: String
 }
 
 type Post {
   id: ID!
   location: String
   caption: String!
-  user: User!
+  user: User
   files: [File!]!
   likes: [Like!]!
-  comments: [Comment!]!
+  comments: [Comment!]
   isLiked: Boolean!
   likeCount: Int!
-  createdAt: String!
-  updatedAt: String!
+  createdAt: String
+  updatedAt: String
 }
 
 type Like {
   id: ID!
-  user: User!
-  post: Post!
-  createdAt: String!
-  updatedAt: String!
+  user: User
+  post: Post
+  createdAt: String
+  updatedAt: String
 }
 
 type Comment {
   id: ID!
   text: String!
-  user: User!
-  post: Post!
-  createdAt: String!
-  updatedAt: String!
+  user: User
+  post: Post
+  createdAt: String
+  updatedAt: String
 }
 
 type File {
   id: ID!
   url: String!
-  post: Post!
-  createdAt: String!
-  updatedAt: String!
+  post: Post
+  createdAt: String
+  updatedAt: String
 }
 
 type Room {
   id: ID!
   participants: [User!]!
   messages: [Message!]!
-  createdAt: String!
-  updatedAt: String!
+  createdAt: String
+  updatedAt: String
 }
 
 type Message {
@@ -73,13 +73,13 @@ type Message {
   from: User!
   to: User!
   room: Room!
-  createdAt: String!
-  updatedAt: String!
+  createdAt: String
+  updatedAt: String
 }
 
 type UserProfile {
   user: User!
   posts: [Post!]!
-  createdAt: String!
-  updatedAt: String!
+  createdAt: String
+  updatedAt: String
 }
