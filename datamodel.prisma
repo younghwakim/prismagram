@@ -1,8 +1,10 @@
 type User {
   id: ID! @id
-  avatar: String
+  avatar: String @default(
+    value: "https://scontent.ficn6-1.fna.fbcdn.net/v/t1.0-1/c0.16.160.160a/p160x160/1908234_591676457584975_917777301_n.jpg?_nc_cat=110&_nc_oc=AQkb6owAIWr4MCRyrqJBDBcqk3LNmpOo95goMSJM_K6AHKHPhpSnUBs1fpupE-_fmEk&_nc_ht=scontent.ficn6-1.fna&oh=4e1d4e22914cfe7fdfb835d345d2734d&oe=5E20F74E"
+  )
   username: String! @unique
-  email: String! @unique
+  email: String! @uniques
   firstName: String @default(value: "")
   lastName: String
   bio: String
@@ -25,8 +27,6 @@ type Post {
   files: [File!]! @relation(name:"FilesOfPost" onDelete: CASCADE)
   likes: [Like!]! @relation(name:"LikeOfPost" onDelete: CASCADE)
   comments: [Comment!]! @relation(name:"CommentsOfPost" onDelete: CASCADE)
-  isLiked: Boolean!
-  likeCount: Int!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
